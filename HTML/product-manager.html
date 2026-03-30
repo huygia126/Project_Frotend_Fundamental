@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="../CSS/category-manager.css">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="side-nav">
+        <div class="brand">
+            <span class="brand-icon">🔥</span>
+            <h2>Ecommerce</h2>
+        </div>
+        <nav class="nav-list">
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>Thống kê</span>
+            </a>
+            <a href="category-manager.html" class="nav-item">
+                <span class="nav-icon">📂</span>
+                <span>Danh mục</span>
+            </a>
+            <a href="product-manager.html" class="nav-item active">
+                <span class="nav-icon">📦</span>
+                <span>Sản phẩm</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="content-area">
+        <header class="app-header">
+            <div class="header-left"></div>
+            <div class="header-right">
+                <button class="icon-btn" aria-label="Thông báo">🔔</button>
+                <div class="profile">
+                    <span class="profile-name">Admin</span>
+                    <span class="profile-avatar" aria-label="Avatar người dùng">👤</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="category-page">
+            <header class="page-header">
+                <h1>Sản phẩm</h1>
+                <button class="btn btn-primary">Thêm mới sản phẩm</button>
+            </header>
+
+            <section class="tools">
+                <div class="filter">
+                    <label for="categoryFilter">Lọc theo danh mục</label>
+                    <select id="categoryFilter" name="categoryFilter">
+                        <option value="all">Tất cả</option>
+                        <option value="clothing">Quần áo</option>
+                        <option value="phones">Điện thoại</option>
+                        <option value="shoes">Giày dép</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="statusFilter">Lọc theo trạng thái</label>
+                    <select id="statusFilter" name="statusFilter">
+                        <option value="all">Tất cả</option>
+                        <option value="active" selected>Đang hoạt động</option>
+                        <option value="inactive">Ngừng hoạt động</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Tìm kiếm sản phẩm theo tên" aria-label="Tìm kiếm sản phẩm">
+                    <button class="btn btn-secondary">Tìm</button>
+                </div>
+            </section>
+
+            <table class="category-table">
+                <thead>
+                    <tr>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>aaaaasx
+                        <th>Số lượng</th>
+                        <th>Giảm giá</th>
+                        <th>Trạng thái</th>
+                        <th>Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SP001</td>
+                        <td>Iphone 12 Pro</td>
+                        <td>12.000.000 đ</td>
+                        <td>10</td>
+                        <td>0%</td>
+                        <td><span class="badge active">Đang hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP002</td>
+                        <td>Samsung Galaxy X20</td>
+                        <td>21.000.000 đ</td>
+                        <td>100</td>
+                        <td>5%</td>
+                        <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP003</td>
+                        <td>Phone 8 Plus</td>
+                        <td>5.000.000 đ</td>
+                        <td>10</td>
+                        <td>0%</td>
+                        <td><span class="badge active">Đang hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP004</td>
+                        <td>Iphone 14 Pro max</td>
+                        <td>25.000.000 đ</td>
+                        <td>20</td>
+                        <td>2%</td>
+                        <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP005</td>
+                        <td>Oppo X3</td>
+                        <td>2.000.000 đ</td>
+                        <td>10</td>
+                        <td>5%</td>
+                        <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP006</td>
+                        <td>Iphone 16</td>
+                        <td>20.000.000 đ</td>
+                        <td>20</td>
+                        <td>3%</td>
+                        <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP007</td>
+                        <td>Iphone 7 Plus</td>
+                        <td>4.000.000 đ</td>
+                        <td>10</td>
+                        <td>4%</td>
+                        <td><span class="badge active">Đang hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SP008</td>
+                        <td>Samsung S20 Ultra</td>
+                        <td>30.000.000 đ</td>
+                        <td>15</td>
+                        <td>2%</td>
+                        <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                        <td>
+                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
+                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <nav class="pagination">
+                <button class="page-btn">←</button>
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn active">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <span class="dots">...</span>
+                <button class="page-btn">20</button>
+                <button class="page-btn">→</button>
+            </nav>
+        </div>
+    </div>
+</div>
+</body>
+</html>

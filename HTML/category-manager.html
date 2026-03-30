@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý danh mục</title>
+    <link rel="stylesheet" href="../CSS/category-manager.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="side-nav">
+            <div class="brand">
+                <span class="brand-icon">🔥</span>
+                <h2>Ecommerce</h2>
+            </div>
+            <nav class="nav-list">
+                <a href="#" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>Thống kê</span>
+                </a>
+                <a href="category-manager.html" class="nav-item active">
+                    <span class="nav-icon">📂</span>
+                    <span>Danh mục</span>
+                </a>
+                <a href="product-manager.html" class="nav-item">
+                    <span class="nav-icon">📦</span>
+                    <span>Sản phẩm</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="content-area">
+            <header class="app-header">
+                <div class="header-left"></div>
+                <div class="header-right">
+                    <button class="icon-btn" aria-label="Thông báo">🔔</button>
+                    <div class="profile">
+                        <span class="profile-name">Admin</span>
+                        <span class="profile-avatar" aria-label="Avatar người dùng">👤</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="category-page">
+        <header class="page-header">
+            <h1>Danh mục</h1>
+            <button class="btn btn-primary">Thêm mới danh mục</button>
+        </header>
+
+        <section class="tools">
+            <div class="filter">
+                <label for="statusFilter">Trạng thái</label>
+                <select id="statusFilter" name="statusFilter">
+                    <option value="all">Tất cả</option>
+                    <option value="active" selected>Đang hoạt động</option>
+                    <option value="inactive">Ngừng hoạt động</option>
+                </select> 
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Tìm kiếm danh mục theo tên" aria-label="Tìm kiếm danh mục">
+                <button class="btn btn-secondary">Tìm</button>
+            </div>
+        </section>
+
+        <table class="category-table">
+            <thead>
+                <tr>
+                    <th>Mã danh mục</th>
+                    <th>Tên danh mục</th>
+                    <th>Trạng thái</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DM001</td>
+                    <td>Quần áo</td>
+                    <td><span class="badge active">Đang hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM002</td>
+                    <td>Kính mắt</td>
+                    <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM003</td>
+                    <td>Giày dép</td>
+                    <td><span class="badge active">Đang hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM004</td>
+                    <td>Thời trang nam</td>
+                    <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM005</td>
+                    <td>Thời trang nữ</td>
+                    <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM006</td>
+                    <td>Hoa quả</td>
+                    <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM007</td>
+                    <td>Rau</td>
+                    <td><span class="badge active">Đang hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DM008</td>
+                    <td>Điện thoại</td>
+                    <td><span class="badge inactive">Ngừng hoạt động</span></td>
+                    <td>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <nav class="pagination">
+            <button class="page-btn">←</button>
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn active">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+            <span class="dots">...</span>
+            <button class="page-btn">20</button>
+            <button class="page-btn">→</button>
+        </nav>
+    </div>
+</div> <!-- .content-area -->
+</div> <!-- .app-shell -->
+</body>
+</html>
