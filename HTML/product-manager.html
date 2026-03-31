@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lý sản phẩm</title>
-    <link rel="stylesheet" href="../CSS/category-manager.css">
+    <link rel="stylesheet" href="../CSS/product-manager.css">
 </head>
 <body>
 <div class="app-shell">
     <aside class="side-nav">
         <div class="brand">
-            <span class="brand-icon">🔥</span>
+            <span class="brand-icon"><img src="../icon/Fire.png" alt=""></span>
             <h2>Ecommerce</h2>
         </div>
         <nav class="nav-list">
-            <a href="#" class="nav-item">
-                <span class="nav-icon">🏠</span>
+            <a href="statistics.html" class="nav-item">
+                <span class="nav-icon"><img src="../icon/Home.png" alt=""></span>
                 <span>Thống kê</span>
             </a>
             <a href="category-manager.html" class="nav-item">
-                <span class="nav-icon">📂</span>
+                <span class="nav-icon"><img src="../icon/Vector.png" alt=""></span>
                 <span>Danh mục</span>
             </a>
             <a href="product-manager.html" class="nav-item active">
-                <span class="nav-icon">📦</span>
+                <span class="nav-icon"><img src="../icon/folder.png" alt=""></span>
                 <span>Sản phẩm</span>
             </a>
         </nav>
@@ -33,10 +33,10 @@
         <header class="app-header">
             <div class="header-left"></div>
             <div class="header-right">
-                <button class="icon-btn" aria-label="Thông báo">🔔</button>
+                <button class="icon-btn" aria-label="Thông báo"><img src="../icon/Bell.png" alt=""></button>
                 <div class="profile">
-                    <span class="profile-name">Admin</span>
-                    <span class="profile-avatar" aria-label="Avatar người dùng">👤</span>
+                   
+                    <span class="profile-avatar" aria-label="Avatar người dùng"><img src="../picture/Ellipse 6.png" alt=""></span>
                 </div>
             </div>
         </header>
@@ -49,8 +49,8 @@
 
             <section class="tools">
                 <div class="filter">
-                    <label for="categoryFilter">Lọc theo danh mục</label>
-                    <select id="categoryFilter" name="categoryFilter">
+                    <select id="categoryFilter" name="categoryFilter" aria-label="Lọc theo danh mục">
+                        <option value="" >Lọc theo danh mục</option>
                         <option value="all">Tất cả</option>
                         <option value="clothing">Quần áo</option>
                         <option value="phones">Điện thoại</option>
@@ -58,16 +58,16 @@
                     </select>
                 </div>
                 <div class="filter">
-                    <label for="statusFilter">Lọc theo trạng thái</label>
-                    <select id="statusFilter" name="statusFilter">
-                        <option value="all">Tất cả</option>
+                    <select id="statusFilter" name="statusFilter" aria-label="Lọc theo trạng thái">
+                        <option value="" >Lọc theo trạng thái</option>
+                        <option value="all">Tất cả</option> 
                         <option value="active" selected>Đang hoạt động</option>
                         <option value="inactive">Ngừng hoạt động</option>
                     </select>
                 </div>
                 <div class="search">
                     <input type="search" placeholder="Tìm kiếm sản phẩm theo tên" aria-label="Tìm kiếm sản phẩm">
-                    <button class="btn btn-secondary">Tìm</button>
+                    <span class="search-icon"><img src="../icon/Shape.png" alt=""></span>
                 </div>
             </section>
 
@@ -76,7 +76,7 @@
                     <tr>
                         <th>Mã sản phẩm</th>
                         <th>Tên sản phẩm</th>
-                        <th>Giá</th>aaaaasx
+                        <th>Giá</th>
                         <th>Số lượng</th>
                         <th>Giảm giá</th>
                         <th>Trạng thái</th>
@@ -92,8 +92,8 @@
                         <td>0%</td>
                         <td><span class="badge active">Đang hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -104,8 +104,8 @@
                         <td>5%</td>
                         <td><span class="badge inactive">Ngừng hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                             <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -116,8 +116,8 @@
                         <td>0%</td>
                         <td><span class="badge active">Đang hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -128,8 +128,8 @@
                         <td>2%</td>
                         <td><span class="badge inactive">Ngừng hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -140,8 +140,8 @@
                         <td>5%</td>
                         <td><span class="badge inactive">Ngừng hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -152,8 +152,8 @@
                         <td>3%</td>
                         <td><span class="badge inactive">Ngừng hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -164,8 +164,8 @@
                         <td>4%</td>
                         <td><span class="badge active">Đang hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                     <tr>
@@ -176,8 +176,8 @@
                         <td>2%</td>
                         <td><span class="badge inactive">Ngừng hoạt động</span></td>
                         <td>
-                            <button class="action-btn delete" aria-label="Xóa">🗑️</button>
-                            <button class="action-btn edit" aria-label="Sửa">✏️</button>
+                            <button class="action-btn delete" aria-label="Xóa"><img src="../icon/Button.png" alt=""></button>
+                            <button class="action-btn edit" aria-label="Sửa"><img src="../icon/Button (1).png" alt=""></button>
                         </td>
                     </tr>
                 </tbody>

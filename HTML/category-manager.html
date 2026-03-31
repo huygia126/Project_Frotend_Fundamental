@@ -6,24 +6,25 @@
     <title>Quản lý danh mục</title>
     <link rel="stylesheet" href="../CSS/category-manager.css">
 </head>
+<script></script>
 <body>
     <div class="app-shell">
         <aside class="side-nav">
             <div class="brand">
-                <span class="brand-icon">🔥</span>
+                <span class="brand-icon"><img src="../icon/Fire.png" alt=""></span>
                 <h2>Ecommerce</h2>
             </div>
             <nav class="nav-list">
-                <a href="#" class="nav-item">
-                    <span class="nav-icon">🏠</span>
+                <a href="statistics.html" class="nav-item">
+                    <span class="nav-icon"><img src="../icon/Home.png" alt=""></span>
                     <span>Thống kê</span>
                 </a>
                 <a href="category-manager.html" class="nav-item active">
-                    <span class="nav-icon">📂</span>
+                    <span class="nav-icon"><img src="../icon/Vector.png" alt=""></span>
                     <span>Danh mục</span>
                 </a>
                 <a href="product-manager.html" class="nav-item">
-                    <span class="nav-icon">📦</span>
+                    <span class="nav-icon"><img src="../icon/folder.png" alt=""></span>
                     <span>Sản phẩm</span>
                 </a>
             </nav>
@@ -33,10 +34,9 @@
             <header class="app-header">
                 <div class="header-left"></div>
                 <div class="header-right">
-                    <button class="icon-btn" aria-label="Thông báo">🔔</button>
+                    <button class="icon-btn" aria-label="Thông báo"><img src="../icon/Bell.png" alt=""></button>
                     <div class="profile">
-                        <span class="profile-name">Admin</span>
-                        <span class="profile-avatar" aria-label="Avatar người dùng">👤</span>
+                        <span class="profile-avatar" aria-label="Avatar người dùng"><img src="../picture/Ellipse 6.png" alt=""></span>
                     </div>
                 </div>
             </header>
@@ -44,28 +44,28 @@
             <div class="category-page">
         <header class="page-header">
             <h1>Danh mục</h1>
-            <button class="btn btn-primary">Thêm mới danh mục</button>
-        </header>
+           <a href="#categoryModal" class="btn btn-primary"> Thêm mới danh mục</a>
+        </header> 
 
-        <section class="tools">
+        <section class="tools"> 
             <div class="filter">
-                <label for="statusFilter">Trạng thái</label>
-                <select id="statusFilter" name="statusFilter">
-                    <option value="all">Tất cả</option>
+                <select id="statusFilter" name="statusFilter" aria-label="Trạng thái">
                     <option value="active" selected>Đang hoạt động</option>
                     <option value="inactive">Ngừng hoạt động</option>
-                </select> 
+                    <option value="all">Tất cả</option>
+                </select>
+                <span class="status-chip">• Đang hoạt động</span>
             </div>
 
             <div class="search">
                 <input type="search" placeholder="Tìm kiếm danh mục theo tên" aria-label="Tìm kiếm danh mục">
-                <button class="btn btn-secondary">Tìm</button>
+                <span class="search-icon"><img src="../icon/Shape.png" alt=""></span>
             </div>
         </section>
 
         <table class="category-table">
             <thead>
-                <tr>
+                <tr >
                     <th>Mã danh mục</th>
                     <th>Tên danh mục</th>
                     <th>Trạng thái</th>
@@ -78,8 +78,8 @@
                     <td>Quần áo</td>
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -87,8 +87,8 @@
                     <td>Kính mắt</td>
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -96,8 +96,8 @@
                     <td>Giày dép</td>
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -105,8 +105,8 @@
                     <td>Thời trang nam</td>
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -114,8 +114,8 @@
                     <td>Thời trang nữ</td>
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -123,8 +123,8 @@
                     <td>Hoa quả</td>
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -132,8 +132,8 @@
                     <td>Rau</td>
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
                 <tr>
@@ -141,8 +141,8 @@
                     <td>Điện thoại</td>
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
-                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa">🗑️</span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa">✏️</span></button>
+                        <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
+                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
                     </td>
                 </tr>
             </tbody>
@@ -160,7 +160,60 @@
             <button class="page-btn">→</button>
         </nav>
     </div>
-</div> <!-- .content-area -->
-</div> <!-- .app-shell -->
+</div> 
+</div> 
+<!-- THÊM DANH MỤC -->
+<div id="categoryModal" class="modal">
+    <div class="modal-box">
+
+        <div class="modal-header">
+            <h2>Thêm mới danh mục</h2>
+
+            <!-- nút X -->
+           <a href="" class="close-btn">&times;</a>
+        </div>
+
+        <div class="modal-body">
+
+            <label>Mã danh mục <span class="required">*</span></label>
+            <input type="text" placeholder="Nhập mã danh mục">
+
+            <label>Tên danh mục <span class="required">*</span></label>
+            <input type="text" placeholder="Nhập tên danh mục">
+
+            <label>Trạng thái</label>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="status" checked>
+                    Đang hoạt động
+                </label>
+
+                <label>
+                    <input type="radio" name="status">
+                    Ngừng hoạt động
+                </label>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <a href="#" class="btn btn-secondary">
+                HỦY
+            </a>
+
+            <button class="btn btn-primary">
+                Thêm
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+
+
 </body>
 </html>
+
