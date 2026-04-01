@@ -144,8 +144,10 @@ body {
 
 .category-page {
   width: min(1300px, 95vw);
+  margin: 16px auto 30px;
   padding: 24px;
   background: var(--surface);
+  border-radius: 12px;
 }
 
 .page-header {

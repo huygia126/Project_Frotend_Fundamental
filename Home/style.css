@@ -1,0 +1,438 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "ABeeZee", sans-serif;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+  padding: 0 170px;
+}
+
+.search {
+  width: 478px;
+  height: 56px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.icon {
+  display: flex;
+  gap: 30px;
+}
+
+.list-link {
+  padding: 0 160px;
+  display: flex;
+  height: 48px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 115px;
+}
+
+.laptop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.smart-watch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.camera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+}
+.headphone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.gaming {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.banner {
+  height: 632px;
+  background-color: #211c24;
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+}
+
+.hot {
+  padding-top: 188px;
+}
+
+.dot-pha {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32px;
+  color: #bdbbbb;
+  padding-bottom: 20px;
+}
+
+.iphone {
+  font-size: 90px;
+  line-height: 72px;
+  color: #fff;
+  padding-bottom: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 200;
+}
+
+.slogan {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  color: #bdbbbb;
+  padding-bottom: 20px;
+}
+
+.btn-buy {
+  font-size: 16px;
+  width: 180px;
+  height: 55px;
+  color: #f5f5f5;
+  background-color: #211c24;
+  border: 1px solid #bdbbbb;
+  border-radius: 8px;
+}
+
+.btn-buy:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+}
+
+.list-card-product {
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.des-product {
+  display: flex;
+  justify-content: center;
+  gap: 800px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.list-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 128px;
+  border-radius: 8px;
+  background-color: #ededed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+}
+
+.list-product {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.list-link-product {
+  width: 1060px;
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+}
+
+.box-card-product {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.box-card-1,
+.box-card-2,
+.box-card-list {
+  display: flex;
+  gap: 16px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 258px;
+  height: 432px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.name {
+  width: 236px;
+  text-align: center;
+  height: 48px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+}
+
+.button-buy {
+  width: 193px;
+  height: 48px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+}
+
+.button-buy:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.product-seller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.title-seller {
+  display: flex;
+  width: 1060px;
+  justify-content: start;
+  font-size: 20px;
+}
+
+.banner-2 {
+  width: 1440px;
+  height: 480px;
+  position: relative;
+  background: linear-gradient(100.23deg, #2e2e2e 42.36%, #000000 98.65%);
+  overflow: hidden;
+}
+
+.macbook {
+  width: 337.92px;
+  height: 181.97px;
+  position: absolute;
+  top: -80px;
+  left: 200px;
+}
+
+.ipad2 {
+  width: 418.56px;
+  height: 262.08px;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 190px;
+  left: -80px;
+}
+
+.ipad1 {
+  width: 237px;
+  height: 192px;
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+.iphone1 {
+  width: 120.36px;
+  height: 365.97;
+  position: absolute;
+  transform: rotate(-15deg) skew(15deg);
+  top: 30px;
+  right: -10px;
+}
+
+.appleWatch1 {
+  width: 404px;
+  height: 312px;
+  position: absolute;
+  bottom: -100px;
+  right: -10px;
+}
+
+.caption-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 120px;
+}
+
+.title-banner2 {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fff;
+}
+
+.des-banner2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #787878;
+}
+
+.btn-banner-buy {
+  width: 187px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+.footer {
+  background-color: #000000;
+  color: #cfcfcf;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.des-footer {
+  width: 384px;
+  height: 220px;
+}
+
+.service {
+  width: 295.5px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.support {
+  width: 295.5px;
+  height: 216px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  padding-top: 23px;
+}
+
+.service-support {
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.icon-social {
+  display: flex;
+  gap: 30px;
+  width: 1060px;
+  height: 25px;
+  justify-content: start;
+}
+
+.title-footer {
+  font-weight: 600;
+}
+
+.btn-banner-buy:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000000;
+}

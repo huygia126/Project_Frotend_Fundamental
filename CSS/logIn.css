@@ -66,14 +66,16 @@
         .remember {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 6px;
         }
 
         .remember input {
             width: 18px;
             height: 18px;
         }
-
+        input[type="checkbox"] {
+        margin-top: 14px; 
+        }   
         .forgot a {
             color: #2563eb;
             text-decoration: none;

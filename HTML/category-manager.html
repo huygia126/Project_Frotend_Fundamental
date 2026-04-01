@@ -79,7 +79,7 @@
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -88,7 +88,7 @@
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +97,7 @@
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -106,7 +106,7 @@
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -115,7 +115,7 @@
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                       <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -124,7 +124,7 @@
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -133,7 +133,7 @@
                     <td><span class="badge active">Đang hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
                 <tr>
@@ -142,7 +142,7 @@
                     <td><span class="badge inactive">Ngừng hoạt động</span></td>
                     <td>
                         <button class="action-btn delete" aria-label="Xóa"><span title="Xóa"><img src="../icon/Button.png" alt=""></span></button>
-                        <button class="action-btn edit" aria-label="Sửa"><span title="Sửa"><img src="../icon/Button (1).png" alt=""></span></button>
+                        <a href="#updateCatalog" class="action-btn edit"> <img src="../icon/Button (1).png" alt=""></a>
                     </td>
                 </tr>
             </tbody>
@@ -212,6 +212,55 @@
     </div>
 </div>
 
+<!-- cập nhật DANH MỤC -->
+<div id="updateCatalog" class="modal">
+    <div class="modal-box">
+
+        <div class="modal-header">
+            <h2>cập nhật danh mục</h2>
+
+            <!-- nút X -->
+           <a href="" class="close-btn">&times;</a>
+        </div>
+
+        <div class="modal-body">
+
+            <label>Mã danh mục <span class="required">*</span></label>
+            <input type="text" placeholder="Nhập mã danh mục">
+
+            <label>Tên danh mục <span class="required">*</span></label>
+            <input type="text" placeholder="Nhập tên danh mục">
+
+            <label>Trạng thái</label>
+
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="status" checked>
+                    Đang hoạt động
+                </label>
+
+                <label>
+                    <input type="radio" name="status">
+                    Ngừng hoạt động
+                </label>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <a href="#" class="btn btn-secondary">
+                HỦY
+            </a>
+
+            <button class="btn btn-primary">
+                Thêm
+            </button>
+
+        </div>
+
+    </div>
+</div>
 
 
 </body>

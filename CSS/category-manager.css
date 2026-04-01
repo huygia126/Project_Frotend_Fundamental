@@ -146,6 +146,7 @@ body {
   padding: 24px;
   background: var(--surface);
   border-radius: 12px;
+  background-color: none;
 }
 
 .page-header {
@@ -514,7 +515,6 @@ body {
 
   z-index: 999;
 }
-
 /* Khi click nút -> hiện modal */
 .modal:target {
   display: flex;
@@ -522,6 +522,7 @@ body {
 
 .modal-box {
   width: 700px;
+  height: 417px;
   background: #fff;
   border-radius: 12px;
   padding: 24px;
@@ -566,6 +567,7 @@ body {
   gap: 20px;
 }
 
+
 .modal-footer {
   margin-top: 24px;
   display: flex;
@@ -573,12 +575,12 @@ body {
   gap: 10px;
 }
 
-.required {
-  color: red;
-}
+
 .btn-primary {
     text-decoration: none; /* bỏ gạch chân */
 }
 .btn {
     text-decoration: none;
 }
+
+
